@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div>Hello world</div>
+  <div class=" text-2xl font-medium font-inter text-green-600">Hello world</div>
 </template>
 
 <style>
