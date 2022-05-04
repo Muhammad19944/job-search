@@ -1,8 +1,12 @@
 <script setup>
+import AppButton from "./common/components/base/Button.vue"
 </script>
 
 <template>
-  <div class=" text-2xl font-medium font-inter text-green-600">Hello world</div>
+  <app-button
+    :icon="true"
+  ></app-button>
+  <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, quas. Numquam provident expedita minus cupiditate quidem eum aut nam dignissimos distinctio labore, deserunt nesciunt ratione voluptatem sunt, ab corporis itaque?</div>
 </template>
 
 <style>

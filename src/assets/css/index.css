@@ -4,3 +4,51 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+@layer base {
+  :root {
+    
+  }
+
+  .dark {
+    --primary-1: 55, 125, 255;
+    --primary-2: 56, 203, 137;
+    --primary-3: 255, 171, 0;
+    --primary-4: 255, 86, 48;
+
+    --secondary-1: rgba(var(--primary-1), 0.3);
+    --secondary-2: rgba(var(--primary-2), 0.3);
+    --secondary-3: rgba(var(--primary-3), 0.3);
+    --secondary-4: rgba(var(--primary-4), 0.3);
+
+    --tansparent-1: rgba(var(--primary-1), 0.15);
+    --tansparent-2: rgba(var(--primary-2), 0.15);
+    --tansparent-3: rgba(var(--primary-3), 0.15);
+    --tansparent-4: rgba(var(--primary-4), 0.15);
+
+    --text-1: #FFF;
+    --text-2: #EEF1F5;
+    --text-3: #8A94A6;
+    --text-4: #B0B7C3;
+
+    --bg-1: #C1C7D0;
+    --bg-2: #2F3746;
+    --bg-3: #232A37;
+    --bg-4: #161C27;
+
+    --shadow-1: 0 23px 44px rgba(3, 8, 17, 0.14);
+    --shadow-2: 0 33px 62px rgba(3, 8, 17, 0.24);
+    --shadow-3: 0 44px 65px rgba(3, 8, 17, 0.19);
+    --shadow-4: 0 50px 72px rgba(3, 8, 17, 0.22);
+
+    --shadow-outline-1: 0 12px 23px 0 rgba(var(--primary-1), 0.06);
+    --shadow-outline-2: 0 12px 23px 0 rgba(var(--primary-2), 0.06);
+    --shadow-outline-3: 0 12px 23px 0 rgba(var(--primary-3), 0.06);
+    --shadow-outline-4: 0 12px 23px 0 rgba(var(--primary-4), 0.06);
+
+    --shadow-depressed-1: 0 19px 20px 0 rgba(var(--primary-1), 0,17);
+    --shadow-depressed-2: 0 19px 20px 0 rgba(var(--primary-2), 0,17);
+    --shadow-depressed-3: 0 19px 20px 0 rgba(var(--primary-3), 0,17);
+    --shadow-depressed-4: 0 19px 20px 0 rgba(var(--primary-4), 0,17);
+  }
+}
