@@ -1,12 +1,9 @@
 <template>
   <button
     type="button"
-    v-bind="$attrs"
     :class="[classes, color]"
-    :style="{
-      width: `${width}px`,
-      height: `${height}px`,
-    }"
+    :style="{ width: `${width}px`, height: `${height}px` }"
+    v-bind="$attrs"
   >
     <span v-if="$slots.prepend" class="mr-2">
       <slot name="prepend" />
@@ -18,8 +15,6 @@
       <slot name="append" />
     </span>
   </button>
-
-  <pre>{{classes}}</pre>
 </template>
 
 <script>
