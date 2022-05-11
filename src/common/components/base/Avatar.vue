@@ -12,7 +12,7 @@
         v-if="avatarUrl"
         :src="avatarUrl"
         alt="Avatar image"
-        class="w-full h-full object-cover"
+        class="w-full h-full object-cover transition-transform hover:scale-110"
       >
 
       <span v-else>{{ avatarName[0] }}</span>
