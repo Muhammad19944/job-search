@@ -12,41 +12,9 @@ const userList = ref([
     avatarName: "M"
   },
   {
-    avatarUrl: "https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-    avatarName: ""
-  },
-  {
-    avatarUrl: "",
-    avatarName: "A"
-  },
-  {
-    avatarUrl: "https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-    avatarName: "11"
-  },
-  {
-    avatarUrl: "",
-    avatarName: "22"
-  },
-  {
     avatarUrl: "",
     avatarName: "M"
-  },
-  {
-    avatarUrl: "https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-    avatarName: ""
-  },
-  {
-    avatarUrl: "",
-    avatarName: "A"
-  },
-  {
-    avatarUrl: "https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-    avatarName: "11"
-  },
-  {
-    avatarUrl: "",
-    avatarName: "22"
-  },
+  }
 ])
 </script>
 
@@ -56,7 +24,7 @@ const userList = ref([
   >
   </app-avatar>
 
-  <app-avatar-group :items="userList" color="bg-primary-2" avatar-name="Muhammad" visible-count="3" />
+  <app-avatar-group :items="userList" color="bg-primary-2" avatar-name="Muhammad" visible-count="2" />
   <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, quas. Numquam provident expedita minus cupiditate quidem eum aut nam dignissimos distinctio labore, deserunt nesciunt ratione voluptatem sunt, ab corporis itaque?</div>
 </template>
 

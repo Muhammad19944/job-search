@@ -10,13 +10,15 @@
       />
     </template>
 
-    <app-avatar
-      :class="[classes]"
-      color="bg-bg-3"
-      #action
-    >
-      +{{ restSide.length }}
-    </app-avatar>
+    <template v-if="items.length > visibleCount">
+      <app-avatar
+        :class="[classes]"
+        color="bg-bg-3"
+        #action
+      >
+        +{{ restSide.length }}
+      </app-avatar>
+    </template>
   </div>
 </template>
 
