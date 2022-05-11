@@ -5,7 +5,7 @@
     v-bind="$attrs"
   >
     <div
-      class="app-avatar-item relative rounded-full z-10 w-full h-full flex items-center justify-center text-text-1"
+      class="app-avatar-item relative rounded-full z-10 w-full h-full flex items-center justify-center overflow-hidden text-text-1"
       :class="[color]"
     >
       <img
@@ -16,6 +16,10 @@
       >
 
       <span v-else>{{ avatarName[0] }}</span>
+
+      <span v-if="$slots.action">
+        <slot name="action" />
+      </span>
     </div>
   </div>
 </template>
@@ -49,7 +53,7 @@ export default {
   computed: {
     classes() {
       return {
-        'app-avatar relative font-medium rounded-full overflow-hidden flex items-center justify-center': this.avatar,
+        'app-avatar relative font-medium rounded-full overflow-hidden flex items-center justify-center z-10 hover:z-20': this.avatar,
         ...this.sizeableClasses
       }
     }
