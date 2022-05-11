@@ -8,10 +8,18 @@
       height: `${height}px`,
     }"
   >
-    Button
+    <span v-if="$slots.prepend" class="mr-2">
+      <slot name="prepend" />
+    </span>
+    <span>
+      <slot />
+    </span>
+    <span v-if="$slots.append" class="ml-2">
+      <slot name="append" />
+    </span>
   </button>
 
-  {{classes}}
+  <pre>{{classes}}</pre>
 </template>
 
 <script>
@@ -23,6 +31,10 @@ export default {
   name: "AppButton",
   mixins: [Sizeable],
   props: {
+    button: {
+      type: Boolean,
+      default: true
+    },
     icon: Boolean,
     outlined: Boolean,
     width: String,
@@ -35,9 +47,8 @@ export default {
   computed: {
     classes() {
       return {
-        'rounded-2xl text-text-1 font-medium block': true,
-        'app-button': !this.icon,
-        'app-button--icon': this.icon,
+        'button rounded-2xl text-text-1 font-medium flex items-center text-sm': this.button,
+        'button--icon': this.icon,
         ...this.sizeableClasses
       }
     }
@@ -46,7 +57,31 @@ export default {
 </script>
 
 <style>
-.app-button {
-  min-width: 138px;
+.button.size--default {
+  height: 43px;
+  min-width: 64px;
+  padding: 0 22px;
+}
+
+.button.size--large {
+  height: 51px;
+  padding: 0 25px
+}
+
+.button.size--small {
+  height: 29px;
+  padding: 0 22px
+}
+
+.button.button--icon {
+  min-height: 0;
+  min-width: 0;
+  padding: 0;
+  border-radius: 100%;
+}
+
+.button.size--default.button--icon {
+  height: 56px;
+  width: 56px;
 }
 </style>
