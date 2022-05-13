@@ -1,6 +1,10 @@
 <template>
   <div
-    :class="[classes, stroke ? 'app-avatar--stroke': '']"
+    :class="[
+      classes,
+      stroke ? 'app-avatar--stroke' : '',
+      tile ? 'app-avatar--tile' : ''
+     ]"
     :style="{ width: `${width}px`, height: `${height}px` }"
     v-bind="$attrs"
   >
@@ -38,6 +42,7 @@ export default {
       default: true
     },
     stroke: Boolean,
+    tile: Boolean,
     width: String,
     height: String,
     color: {
@@ -104,5 +109,10 @@ export default {
 .app-avatar--stroke .app-avatar-item {
   width: calc(100% - 4px);
   height: calc(100% - 4px);
+}
+
+.app-avatar.app-avatar--tile,
+.app-avatar.app-avatar--tile .app-avatar-item {
+  border-radius: 10px;
 }
 </style>

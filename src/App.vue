@@ -19,13 +19,7 @@ const userList = ref([
 </script>
 
 <template>
-  <app-avatar
-    avatar-name="ABC"
-  >
-  </app-avatar>
-
-  <app-avatar-group :items="userList" color="bg-primary-2" avatar-name="Muhammad" visible-count="2" />
-  <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, quas. Numquam provident expedita minus cupiditate quidem eum aut nam dignissimos distinctio labore, deserunt nesciunt ratione voluptatem sunt, ab corporis itaque?</div>
+  <div>App.vue</div>
 </template>
 
 <style>

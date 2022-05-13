@@ -33,6 +33,8 @@ module.exports = {
         "bg-2": "var(--bg-2)",
         "bg-3": "var(--bg-3)",
         "bg-4": "var(--bg-4)",
+
+        "border-color": "var(--border-color)"
       },
       boxShadow: {
         "shadow-1": "var(--shadow-1)",

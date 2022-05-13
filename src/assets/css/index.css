@@ -94,5 +94,7 @@
     --shadow-depressed-2: 0 19px 20px 0 rgba(var(--primary-2), 0,17);
     --shadow-depressed-3: 0 19px 20px 0 rgba(var(--primary-3), 0,17);
     --shadow-depressed-4: 0 19px 20px 0 rgba(var(--primary-4), 0,17);
+
+    --border-color: var(--bg-3)
   }
 }
