@@ -19,7 +19,7 @@ const userList = ref([
 </script>
 
 <template>
-  <div>App.vue</div>
+  <div class="main-app min-h-screen bg-bg-3 text-text-2">App.vue</div>
 </template>
 
 <style>
