@@ -8,6 +8,21 @@ module.exports = {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
       },
+      fontSize: {
+        'heading-1' : '80px',
+        'heading-2' : '60px',
+        'heading-3' : '48px',
+        'heading-4' : '40px',
+        'heading-5' : '32px',
+        'heading-6' : '28px',
+        'heading-7' : '26px',
+        'heading-8' : '24px',
+        'heading-9' : '22px',
+        'body-1'    : '20px',
+        'body-2'    : '18px',
+        'small-1'   : '12px',
+        'tiny'      : '10px'
+      },
       colors: {
         "primary-1": "rgba(var(--primary-1), 1)",
         "primary-2": "rgba(var(--primary-2), 1)",
@@ -51,8 +66,17 @@ module.exports = {
         "shadow-depressed-2": "var(--shadow-depressed-2)",
         "shadow-depressed-3": "var(--shadow-depressed-3)",
         "shadow-depressed-4": "var(--shadow-depressed-4)",
+      },
+      width: {
+        '88' : '22rem'
       }
     },
+    container: {
+      padding: "15px"
+    },
+    // fontSize: {
+    //   // 'tiny': '10px'
+    // }
   },
   plugins: [],
 }

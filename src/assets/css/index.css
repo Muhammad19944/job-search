@@ -5,53 +5,9 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-
 @layer base {
   :root {
-    --primary-1: #ff2200
-  }
-
-  .dark {
-    --primary-1: #377DFF;
-    --primary-2: #38CB89;
-    --primary-3: #FFAB00;
-    --primary-4: #FF5630;
-
-    --secondary-1: rgba(var(--primary-1), 0.3);
-    --secondary-2: rgba(var(--primary-2), 0.3);
-    --secondary-3: rgba(var(--primary-3), 0.3);
-    --secondary-4: rgba(var(--primary-4), 0.3);
-
-    --transparent-1: rgba(var(--primary-1), 0.15);
-    --transparent-2: rgba(var(--primary-1), 0.15);
-    --transparent-3: rgba(var(--primary-1), 0.15);
-    --transparent-4: rgba(var(--primary-1), 0.15);
-
-    --text-1: #323B4B;
-    --text-2: #4E5D78;
-    --text-3: #8A94A6;
-    --text-4: #B0B7C3;
-
-    --bg-1: #C1C7D0;
-    --bg-2: #EBECF0;
-    --bg-3: #FAFBFC;
-    --bg-4: #FFFFFF;
-
-    --shadow-1: 0 23px 44px rgba(3, 8, 17, 0.14);
-    --shadow-2: 0 33px 62px rgba(3, 8, 17, 0.24);
-    --shadow-3: 0 44px 65px rgba(3, 8, 17, 0.19);
-    --shadow-4: 0 50px 77px rgba(3, 8, 17, 0.22);
-
-    --shadow-primary-1: 0 19px 20px rgba(var(--primary-1), 0.17);
-    --shadow-primary-2: 0 19px 20px rgba(var(--primary-2), 0.17);
-    --shadow-primary-3: 0 19px 20px rgba(var(--primary-3), 0.17);
-    --shadow-primary-4: 0 19px 20px rgba(var(--primary-4), 0.17);
-  }
-}
-
-@layer base {
-  :root {
-
+    /* Light mode */
   }
 
   .dark {
@@ -65,10 +21,10 @@
     --secondary-3: rgba(var(--primary-3), 0.3);
     --secondary-4: rgba(var(--primary-4), 0.3);
 
-    --tansparent-1: rgba(var(--primary-1), 0.15);
-    --tansparent-2: rgba(var(--primary-2), 0.15);
-    --tansparent-3: rgba(var(--primary-3), 0.15);
-    --tansparent-4: rgba(var(--primary-4), 0.15);
+    --transparent-1: rgba(var(--primary-1), 0.15);
+    --transparent-2: rgba(var(--primary-2), 0.15);
+    --transparent-3: rgba(var(--primary-3), 0.15);
+    --transparent-4: rgba(var(--primary-4), 0.15);
 
     --text-1: #FFF;
     --text-2: #EEF1F5;
@@ -97,4 +53,14 @@
 
     --border-color: var(--bg-3)
   }
+}
+
+@layer components {
+  .app-wrapper {
+    @apply bg-bg-4 rounded-2xl;
+  }
+}
+
+body {
+  font-family: "Inter" !important;
 }

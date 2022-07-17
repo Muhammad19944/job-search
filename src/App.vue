@@ -1,25 +1,33 @@
-<script setup>
-import { ref } from "vue"
-import { BeakerIcon } from '@heroicons/vue/outline'
+<script>
+import { defineComponent, ref } from "vue";
+import { darkTheme } from "naive-ui";
 
-const userList = ref([
-  {
-    avatarUrl: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHw%3D&w=1000&q=80",
-    avatarName: ""
-  },
-  {
-    avatarUrl: "",
-    avatarName: "M"
-  },
-  {
-    avatarUrl: "",
-    avatarName: "M"
+export default defineComponent({
+  setup() {
+    return {
+      darkTheme,
+      theme: ref(null)
+    };
   }
-])
+});
 </script>
 
 <template>
-  <div class="main-app min-h-screen bg-bg-3 text-text-2">App.vue</div>
+  <n-config-provider :theme="theme">
+    <!-- <n-card>
+      <n-space>
+        <n-button @click="theme = darkTheme">
+          Dark
+        </n-button>
+        <n-button @click="theme = null">
+          Light
+        </n-button>
+      </n-space>
+    </n-card> -->
+    <router-view />
+
+    <n-global-style />
+  </n-config-provider>
 </template>
 
 <style>
